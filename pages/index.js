@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Plant List | Home</title>
+        <title>Plant Owners | Home</title>
         <meta name="keywords" content="plants " />
       </Head>
       <div>
@@ -14,7 +14,7 @@ export default function Home() {
         <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab quod numquam consequatur iste suscipit, doloribus sunt ut ipsam, harum, laborum eius voluptatibus fugiat. Laboriosam eaque qui nihil at exercitationem!</p>
         <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab quod numquam consequatur iste suscipit, doloribus sunt ut ipsam, harum, laborum eius voluptatibus fugiat. Laboriosam eaque qui nihil at exercitationem!</p>
         <Link href="/plants">
-          <a className={styles.btn}>See all plants</a>
+          <a className={styles.btn}>See all plant owners</a>
         </Link>
       </div>
     </>

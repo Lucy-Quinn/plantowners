@@ -4,9 +4,9 @@ export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await res.json();
 
-    const paths = data.map(plant => {
+    const paths = data.map(owner => {
         return {
-            params: { id: plant.id.toString() }
+            params: { id: owner.id.toString() }
         }
     })
 
@@ -32,17 +32,17 @@ export const getStaticProps = async (context) => {
     const data = await res.json();
 
     return {
-        props: { plant: data }
+        props: { owner: data }
     }
 }
 
-const Details = ({ plant }) => {
+const Details = ({ owner }) => {
     return (
         <div>
-            <h1>{plant.name}</h1>
-            <p>{plant.email}</p>
-            <p>{plant.website}</p>
-            <p>{plant.address.city}</p>
+            <h1>{owner.name}</h1>
+            <p>{owner.email}</p>
+            <p>{owner.website}</p>
+            <p>{owner.address.city}</p>
         </div>
     );
 }

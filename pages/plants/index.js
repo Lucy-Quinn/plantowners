@@ -12,20 +12,20 @@ export const getStaticProps = async () => {
     const data = await res.json(); //use json to get the data from the object
 
     return {
-        props: { plants: data }
+        props: { owners: data }
     }
 }
 //this function never runs in the browser only at build time so do not write code here that you expect to run in the browser
 
 
-const Plants = ({ plants }) => {
+const Plants = ({ owners }) => {
     return (
         <div>
-            <h1>All plants</h1>
-            {plants.map(plant => (
-                <Link href={`/plants/${plant.id}`} key={plant.id}>
+            <h1>All plant owners</h1>
+            {owners.map(owner => (
+                <Link href={`/plants/${owner.id}`} key={owner.id}>
                     <a className={styles.single}>
-                        <h3>{plant.name}</h3>
+                        <h3>{owner.name}</h3>
                     </a>
                 </Link>
             ))}

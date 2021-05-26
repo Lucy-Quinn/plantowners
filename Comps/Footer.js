@@ -7,5 +7,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-//these are called reusable dropping components (both the navbar and the footer)

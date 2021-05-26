@@ -7,8 +7,6 @@ const NotFound = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            // router.go(-1) OR router.go(1)
-            // negative no. takes the user back a page/ positive no. takes the user forward a page
             router.push('/');
         }, 3000);
     }, []);

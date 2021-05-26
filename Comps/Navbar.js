@@ -16,5 +16,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-//The links are working and all done in the browser
